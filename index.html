@@ -1,1 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Worldwide Pages</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+text-align: center;
+padding: 18px;
+background-color: lightgreen;
+}
 
+.content {
+border-style: solid;
+border-width: 8px;
+border-color: red;
+background-color:blue;
+color: yellow;
+padding:12px;
+}
+
+.content ul {
+list-style: none;
+}
+
+.button {
+  border-radius: 4px;
+  background-color: purple;
+  border: none;
+  color: cyan;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 80%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+</head>
+<body>
+<div class="content">
+<h1>JstMStudio</h1>
+<h2 style="color: #ff9980;">International Website</h2>
+<h3 style="color: #99ff33;">JstMStudio is a small studio founded by Jst Tan. JstMStudio is focused on many things, from music, story writing, website development and much more. JstMStudio is a small remote indie studio that focuses on many things to build a better future. </h3>
+<br>
+<hr>
+<br>
+<h2>Country (Languages)</h2>
+<h3>Please choose your preffered country and languages from the list provided below to visit the respective website.</h3>
+<br>
+<a href="https://jstmstudio.tk"><button class="button"><span>United States (English) </span></button></a>
+<a href="https://cn.jstmstudio.tk"><button class="button"><span>China (Chinese) </span></button></a>
+<a href="https://it.jstmstudio.tk"><button class="button"><span>Italy (Italian) </span></button></a>
+<a href="https://fr.jstmstudio.tk"><button class="button"><span>France (French) </span></button></a>
+<a href="https://latin.jstmstudio.tk"><button class="button"><span>South America (Latin) </span></button></a>
+</div>
+
+</body>
+</html>
